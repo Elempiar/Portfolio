@@ -1,0 +1,31 @@
+@import "../../scss/includes.scss";
+
+.container {
+  width: 90%;
+  max-width: $max-width;
+  margin: 0 auto;
+  position: relative;
+  padding-right: 50px;
+  &:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid $color-accent;
+    border-right: 2px solid $color-accent;
+    border-radius: 0 20px 20px 0;
+    pointer-events: none;
+  }
+  &:target:before {
+    border-top: 2px solid $color-main-light;
+    border-right: 2px solid $color-main-light;
+  }
+  p {
+    width: 100%;
+    display: inline-block;
+    margin: 2em 0 4em;
+    @include media(">tablet") {
+      width: 70%;
+    }
+  }
+}

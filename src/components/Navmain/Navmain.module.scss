@@ -1,0 +1,42 @@
+@import "../../scss/includes.scss";
+
+.container {
+  position: relative;
+  max-width: $max-width;
+  margin: 5rem auto;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 1fr;
+  row-gap: 2rem;
+  justify-content: center;
+  @include media(">phone") {
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 150px);
+    column-gap: 10px;
+    margin: 8rem auto;
+  }
+  @include media(">tablet") {
+    column-gap: 50px;
+  }
+}
+
+.button {
+  display: block;
+  z-index: 1;
+  justify-self: center;
+  width: 150px;
+  height: 35px;
+  border: 2px solid $color-accent;
+  border-radius: 20px;
+  color: $color-text;
+  background: $color-main-dark;
+  text-decoration: none;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  line-height: 32px;
+  text-align: center;
+  &:hover {
+    background: $color-accent;
+    color: $color-main-dark;
+  }
+}

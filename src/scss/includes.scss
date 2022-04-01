@@ -1,0 +1,29 @@
+.clear {
+  clear: both;
+}
+
+//media
+
+@import "include-media";
+
+$breakpoints: (
+  phone: 480px,
+  tablet: 768px,
+  desktop: 1024px,
+);
+
+$max-width: 1200px;
+
+//colors
+
+$color-main-dark: hsl(0deg, 0%, 15%);
+$color-main-light: hsl(340deg, 83%, 82%);
+$color-accent: hsl(150deg, 66%, 80%);
+$color-text: hsl(220deg, 20%, 97%);
+
+//typo
+
+$font-sans: "Rubik", sans-serif;
+$font-size: 16px;
+
+//mixins

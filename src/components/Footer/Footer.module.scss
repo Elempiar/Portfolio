@@ -1,0 +1,15 @@
+@import "../../scss/includes.scss";
+
+.footer {
+  height: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.paragraph {
+  line-height: 400px;
+  color: $color-main-dark;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 5rem;
+}
