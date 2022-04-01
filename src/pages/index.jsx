@@ -6,10 +6,15 @@ import Projects from "../components/Projects/Projects";
 import Skills from "../components/Skills/Skills";
 import styles from "../scss/index.module.scss";
 import { getAllPosts } from "../mdx";
+import Head from "next/head";
 
 export default function App({ posts }) {
   return (
     <>
+      <Head>
+        <title>Luuk Verboeket | Front-end Developer</title>
+      </Head>
+
       <Hero />
       <div className={styles.homePage}>
         <Navmain />
