@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./Projects.module.scss";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Card({ post }) {
   return (
