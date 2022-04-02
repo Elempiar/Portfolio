@@ -9,6 +9,7 @@ export default function Navbar() {
   function showMenu() {
     setShow(true);
   }
+
   function hideMenu() {
     setShow(false);
   }

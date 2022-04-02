@@ -6,7 +6,7 @@ export default function About({ posts }) {
     <>
       <Head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <title>Luuk Verboeket | About Me</title>
+        <title>Luuk Verboeket | About</title>
       </Head>
 
       <h1>tieten</h1>
