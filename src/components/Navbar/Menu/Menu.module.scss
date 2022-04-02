@@ -52,7 +52,14 @@
 }
 
 .close {
-  text-align: right;
+  font-family: "Rubik", sans-serif;
+  cursor: pointer;
+  background: inherit;
+  border: inherit;
+  font-weight: 700;
+  color: $color-accent;
+  font-size: 1.5rem;
+  text-transform: uppercase;
   position: absolute;
   top: 0;
   right: 0;
@@ -60,7 +67,9 @@
     content: "close";
   }
   padding-top: 5px;
+  padding-right: 10px;
   @include media(">phone") {
     padding-top: 30px;
+    padding-right: 0;
   }
 }
