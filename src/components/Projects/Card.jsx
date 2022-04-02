@@ -14,9 +14,7 @@ export default function Card({ post }) {
             <Tag key={tag} tag={tag} />
           ))}
         </span>
-        <div className={styles.thumb}>
-          <Image src={post.frontmatter.thumb} alt="" layout="fill" />
-        </div>
+        <img className={styles.thumb} src={post.frontmatter.thumb} alt="" />
       </a>
     </Link>
   );
