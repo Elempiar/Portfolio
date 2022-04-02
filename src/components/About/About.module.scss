@@ -16,9 +16,25 @@
     border-radius: 0 20px 20px 0;
     pointer-events: none;
   }
-  &:target:before {
-    border-top: 2px solid $color-main-light;
-    border-right: 2px solid $color-main-light;
+  a {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate(2px, 2px);
+    padding: 10px 10px 5px;
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 2px solid $color-accent;
+    border-radius: 0 0 20px 0;
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    &:hover {
+      background: $color-accent;
+      color: $color-main-dark;
+      border-radius: 20px 0 20px 20px;
+    }
   }
   p {
     width: 100%;
@@ -26,6 +42,14 @@
     margin: 2em 0 4em;
     @include media(">tablet") {
       width: 70%;
+    }
+  }
+  &:target {
+    a {
+      border-bottom: 2px solid $color-main-light;
+      &:hover {
+        background: $color-main-light;
+      }
     }
   }
 }

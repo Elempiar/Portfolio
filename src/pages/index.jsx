@@ -12,6 +12,7 @@ export default function App({ posts }) {
   return (
     <>
       <Head>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <title>Luuk Verboeket | Front-end Developer</title>
       </Head>
 

@@ -4,7 +4,7 @@ import styles from "./Hero.module.scss";
 
 export default function Hero() {
   return (
-    <section id="hero">
+    <div id="hero">
       <div className={styles.container}>
         <div className={clsx(styles.title, styles.top)}>
           <span>Hey, I&apos;m</span>
@@ -22,6 +22,6 @@ export default function Hero() {
           <span className={styles.fill}>developer</span>
         </div>
       </div>
-    </section>
+    </div>
   );
 }

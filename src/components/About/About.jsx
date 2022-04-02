@@ -1,12 +1,15 @@
 import React from "react";
 import styles from "./About.module.scss";
+import Link from "next/link";
 
 export default function About() {
   return (
     <section id="about" className={styles.container}>
       <div className="section--title-cover">
         <h2>Who&apos;s this guy?</h2>
-        <a href="localhost:3000">More about me</a>
+        <Link href="/about">
+          <a>More about me</a>
+        </Link>
       </div>
       <p>
         Hey! I&apos;m a Dutch{" "}

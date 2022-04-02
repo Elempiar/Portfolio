@@ -45,42 +45,26 @@ p {
   }
 }
 
-.section--title {
-  h2 {
-    color: $color-text;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    padding: 10px 0;
-    font-weight: 400;
-    margin-right: auto;
-  }
+h2 {
+  color: $color-text;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 10px 0;
+  font-weight: 400;
+  margin-right: auto;
 }
 
-.section--title-cover {
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 1.5rem;
-  color: $color-text;
-  text-transform: uppercase;
-  h2 {
-    padding: 10px 0;
-    margin-right: auto;
-  }
-  a {
+section {
+  &:before {
     position: absolute;
-    right: 0;
-    bottom: 0;
-    transform: translate(2px, 2px);
-    padding: 10px 10px 5px;
-    text-decoration: none;
-    color: inherit;
-    border-bottom: 2px solid $color-accent;
-    border-radius: 0 0 20px 0;
-    text-align: center;
-    &:hover {
-      background: $color-accent;
-      color: $color-main-dark;
-      border-radius: 20px 0 20px 20px;
+    content: "";
+    width: 100%;
+    border-top: 2px solid $color-accent;
+  }
+  &:target {
+    &:before {
+      border-top: 2px solid $color-main-light;
+      border-right: 2px solid $color-main-light;
     }
   }
 }
