@@ -37,19 +37,7 @@
     }
   }
   p {
-    width: 100%;
     display: inline-block;
-    margin: 2em 0 4em;
-    @include media(">tablet") {
-      width: 70%;
-    }
-  }
-  &:target {
-    a {
-      border-bottom: 2px solid $color-main-light;
-      &:hover {
-        background: $color-main-light;
-      }
-    }
+    margin: 4em 0 6em;
   }
 }

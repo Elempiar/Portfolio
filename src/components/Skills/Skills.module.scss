@@ -3,8 +3,10 @@
 .container {
   width: 90%;
   max-width: $max-width;
-  margin: 0 auto;
-  margin-top: 10rem;
+  @include media(">tablet") {
+    margin-top: 20rem;
+  }
+  margin: 10rem auto 4rem;
   position: relative;
 }
 
@@ -13,7 +15,7 @@
   text-align: center;
   float: left;
   margin-bottom: 4rem;
-  @include media(">tablet") {
+  @include media(">phone") {
     width: 50%;
   }
   h2 {

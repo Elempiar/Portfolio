@@ -43,6 +43,10 @@ p {
   @include media(">tablet") {
     font-size: 2rem;
   }
+  width: 100%;
+  @include media(">tablet") {
+    width: 70%;
+  }
 }
 
 h2 {
@@ -55,16 +59,11 @@ h2 {
 }
 
 section {
+  margin-top: 12rem;
   &:before {
     position: absolute;
     content: "";
     width: 100%;
     border-top: 2px solid $color-accent;
-  }
-  &:target {
-    &:before {
-      border-top: 2px solid $color-main-light;
-      border-right: 2px solid $color-main-light;
-    }
   }
 }

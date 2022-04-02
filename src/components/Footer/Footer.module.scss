@@ -1,15 +1,95 @@
 @import "../../scss/includes.scss";
 
 .footer {
-  height: 400px;
   width: 100%;
   text-align: center;
 }
 
-.paragraph {
-  line-height: 400px;
-  color: $color-main-dark;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 5rem;
+.container {
+  position: relative;
+  width: 90%;
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 4rem;
+  @include media(">phone") {
+    flex-direction: row;
+  }
+}
+
+.sub {
+  width: 100%;
+  position: relative;
+  @include media(">phone") {
+    width: 50%;
+  }
+  &:before {
+    left: 0;
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-top: 2px solid $color-main-dark;
+  }
+  h2 {
+    color: $color-main-dark;
+    text-align: left;
+    margin-bottom: 2rem;
+    font-weight: 500;
+  }
+}
+
+.list {
+  width: 100%;
+  text-align: left;
+  li {
+    font-weight: 500;
+    display: inline-block;
+    margin: 0 10px 10px 0;
+    padding: 0 20px;
+    text-align: center;
+    height: 35px;
+    border: 2.3px solid $color-main-dark;
+    border-radius: 20px;
+    color: $color-main-dark;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    line-height: 32px;
+    &:hover {
+      background: $color-main-dark;
+      color: $color-main-light;
+    }
+  }
+}
+
+.bot {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: $color-main-dark;
+  display: flex;
+  flex-direction: column;
+  .socials {
+    a {
+      display: inline-block;
+      margin: 10px;
+      cursor: pointer;
+    }
+    img {
+      height: 30px;
+    }
+  }
+  .copyright {
+    display: block;
+    line-height: 20px;
+    opacity: 0.5;
+    @include media(">phone") {
+      position: absolute;
+      line-height: 50px;
+      left: 2%;
+    }
+  }
 }
