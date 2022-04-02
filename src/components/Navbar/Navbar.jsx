@@ -16,7 +16,7 @@ export default function Navbar() {
 
   return (
     <>
-      {show && <Menu hideMenu={hideMenu} />}
+      {<Menu hideMenu={hideMenu} show={show} />}
       <nav className={styles.nav}>
         <div className={styles.container}>
           <Link href="/">

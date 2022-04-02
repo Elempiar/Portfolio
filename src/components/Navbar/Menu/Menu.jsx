@@ -5,22 +5,23 @@ import Link from "next/link";
 
 export default function Menu(props) {
   return (
-    <div className={styles.menu}>
+    // <div className={styles.menu}>
+    <div className={clsx(styles.menu, props.show && styles.active)}>
       <div className={styles.container}>
         <button className={styles.close} onClick={props.hideMenu}></button>
         <div>
-          <button className={styles.item} onClick={props.hideMenu}>
-            <Link href="/">
-              <a>Home</a>
-            </Link>
-          </button>
+          <Link href="/">
+            <a className={styles.item} onClick={props.hideMenu}>
+              Home
+            </a>
+          </Link>
         </div>
         <div>
-          <button className={styles.item} onClick={props.hideMenu}>
-            <Link href="/about">
-              <a>About</a>
-            </Link>
-          </button>
+          <Link href="/about">
+            <a className={styles.item} onClick={props.hideMenu}>
+              About
+            </a>
+          </Link>
         </div>
       </div>
       <div className="background"></div>

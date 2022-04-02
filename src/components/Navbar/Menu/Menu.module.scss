@@ -5,9 +5,14 @@
   height: 100vh;
   z-index: 101;
   position: fixed;
-  top: 0;
   left: 0;
+  top: 0;
   background: $color-main-light;
+  transform: translateY(-100%);
+  transition: all ease 1s;
+}
+.active {
+  transform: translateY(0);
 }
 .container {
   max-width: $max-width;
@@ -21,20 +26,6 @@
   justify-content: center;
   align-items: center;
   gap: 3em;
-  button {
-    border: none;
-    cursor: pointer;
-    background: inherit;
-    text-transform: uppercase;
-    font-family: "Rubik", sans-serif;
-    color: $color-accent;
-    font-weight: 700;
-    font-size: 1.5rem;
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-  }
   .item {
     padding: 0;
     font-size: 4rem;
@@ -47,13 +38,15 @@
     @include media(">desktop") {
       font-size: 8rem;
     }
-    a {
-      -webkit-text-fill-color: $color-main-light;
-      -webkit-text-stroke-width: 2px;
-      -webkit-text-stroke-color: $color-accent;
-      &:hover {
-        -webkit-text-fill-color: $color-accent;
-      }
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    -webkit-text-fill-color: $color-main-light;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: $color-accent;
+    &:hover {
+      -webkit-text-fill-color: $color-accent;
     }
   }
 }
