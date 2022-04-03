@@ -5,7 +5,6 @@ import Link from "next/link";
 
 export default function Menu(props) {
   return (
-    // <div className={styles.menu}>
     <div className={clsx(styles.menu, props.show && styles.active)}>
       <div className={styles.container}>
         <button className={styles.close} onClick={props.hideMenu}></button>

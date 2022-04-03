@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import Head from "next/head";
 import Cv from "../components/Cv/Cv";
-import styles from "../scss/page.module.scss";
 
 export default function About({ posts }) {
   useEffect(() => {

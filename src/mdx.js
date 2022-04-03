@@ -7,7 +7,6 @@ import remarkGfm from "remark-gfm";
 import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypePrism from "rehype-prism-plus";
-import uniq from "lodash/uniq";
 
 export const POSTS_PATH = path.join(process.cwd(), "./src/posts");
 
@@ -52,9 +51,9 @@ export const getAllPosts = () => {
     .map((postData, index) => {
       return {
         ...postData,
-        id: index+1
-    }
-  })
+        id: index + 1,
+      };
+    });
 };
 
 export const getSinglePost = async (slug) => {

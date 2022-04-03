@@ -49,11 +49,9 @@ p {
   font-size: 1.25rem;
   font-weight: 200;
   line-height: 1.5em;
-  @include media(">tablet") {
-    font-size: 2rem;
-  }
   width: 100%;
   @include media(">tablet") {
+    font-size: 2rem;
     width: 70%;
   }
   margin-bottom: 1em;

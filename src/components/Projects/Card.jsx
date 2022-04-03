@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Card({ post }) {
   return (
-    <Link href={`/posts/${post.slug}`}>
+    <Link href={`/projects/${post.slug}`}>
       <a className={styles.card}>
         <span className={styles.number}>{`${post.id}`.padStart(2, "0")}</span>
         <span className={styles.title}>{post.frontmatter.title}</span>

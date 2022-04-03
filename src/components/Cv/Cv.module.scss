@@ -56,7 +56,7 @@
 }
 
 .section {
-  margin-top: 4rem;
+  margin-top: 6rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -73,6 +73,7 @@
     margin-right: 0;
   }
   @include media(">tablet") {
+    margin-top: 10rem;
     flex-direction: row;
     gap: 4rem;
     width: 95%;
@@ -90,9 +91,9 @@
     }
     &:after {
       content: "";
-      height: 200%;
+      height: 300%;
       border-left: 2px solid $color-main-light;
-      top: -40%;
+      top: -100%;
       left: 0;
       position: absolute;
     }

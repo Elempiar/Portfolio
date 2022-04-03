@@ -1,0 +1,90 @@
+@import "../../scss/includes.scss";
+
+.container {
+  width: 90%;
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 6rem 0;
+  p {
+    font-size: 1.25rem;
+    width: 100%;
+  }
+  @include media(">tablet") {
+    p {
+      font-size: 2rem;
+      width: 70%;
+      margin-left: 10%;
+    }
+  }
+  a {
+    color: $color-accent;
+  }
+}
+
+.title {
+  text-transform: capitalize;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  .desc {
+    text-transform: none;
+    font-size: 1.25rem;
+    margin: 1em 0;
+  }
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  h3 {
+    font-size: 1.12rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    margin-top: 0.5em;
+  }
+  span:after {
+    content: ", ";
+  }
+  span:last-of-type:after {
+    content: "";
+  }
+  @include media(">tablet") {
+    text-align: left;
+    margin-left: 10%;
+    h1 {
+      font-size: 3rem;
+    }
+    .desc {
+      font-size: 2rem;
+      margin: 0.5em 0;
+    }
+    .live {
+      margin-left: 0;
+    }
+    .tags {
+      display: flex;
+      width: 70%;
+      gap: 4rem;
+      span {
+        font-size: 1.12rem;
+      }
+    }
+  }
+}
+
+.post {
+  display: block;
+  margin-top: 5rem;
+  img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  @include media(">tablet") {
+    p:first-of-type {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+}

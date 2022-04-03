@@ -25,7 +25,7 @@ export default function Cv() {
         </div>
       </div>
       <div className={styles.section}>
-        <h2>werkervaring</h2>
+        <h2>About Me</h2>
         <div>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
@@ -36,7 +36,7 @@ export default function Cv() {
         </div>
       </div>
       <div className={styles.section}>
-        <h2>opleiding</h2>
+        <h2>Skills</h2>
         <div>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
@@ -47,7 +47,40 @@ export default function Cv() {
         </div>
       </div>
       <div className={styles.section}>
-        <h2>Vaardigheden</h2>
+        <h2>Goals</h2>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            hendrerit, ex tempus feugiat consectetur, enim nulla molestie
+            libero, sed vestibulum lorem mauris nec erat. Cras mattis tellus non
+            molestie fringilla.
+          </p>
+        </div>
+      </div>
+      <div className={styles.section}>
+        <h2>Motivation</h2>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            hendrerit, ex tempus feugiat consectetur, enim nulla molestie
+            libero, sed vestibulum lorem mauris nec erat. Cras mattis tellus non
+            molestie fringilla.
+          </p>
+        </div>
+      </div>
+      <div className={styles.section}>
+        <h2>Interests</h2>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            hendrerit, ex tempus feugiat consectetur, enim nulla molestie
+            libero, sed vestibulum lorem mauris nec erat. Cras mattis tellus non
+            molestie fringilla.
+          </p>
+        </div>
+      </div>
+      <div className={styles.section}>
+        <h2>Experience</h2>
         <div>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
