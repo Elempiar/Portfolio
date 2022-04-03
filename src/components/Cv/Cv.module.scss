@@ -1,0 +1,100 @@
+@import "../../scss/includes.scss";
+
+.container {
+  width: 90%;
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 6rem 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  @include media(">tablet") {
+    text-align: left;
+  }
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  .img {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    z-index: 10;
+    img {
+      border-radius: 5px;
+      width: 70%;
+      max-width: 300px;
+    }
+  }
+  @include media(">tablet") {
+    flex-direction: row;
+    gap: 2rem;
+    .img {
+      min-width: 250px;
+      max-width: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0;
+      img {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+    .wrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 2rem;
+      p {
+        width: 100%;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.section {
+  margin-top: 4rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  &:before {
+    content: "";
+    width: 100%;
+    border-top: 2px solid $color-main-light;
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+  h2 {
+    margin-bottom: 2rem;
+    margin-right: 0;
+  }
+  @include media(">tablet") {
+    flex-direction: row;
+    gap: 4rem;
+    width: 95%;
+    transform: translateX(5%);
+    div {
+      width: 100%;
+      p {
+        width: 100%;
+      }
+    }
+    h2 {
+      display: inline-block;
+      padding-left: 10px;
+      width: 250px;
+    }
+    &:after {
+      content: "";
+      height: 200%;
+      border-left: 2px solid $color-main-light;
+      top: -40%;
+      left: 0;
+      position: absolute;
+    }
+  }
+}

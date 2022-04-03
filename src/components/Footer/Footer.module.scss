@@ -15,7 +15,7 @@
   flex-direction: column;
   justify-content: left;
   gap: 4rem;
-  @include media(">phone") {
+  @include media(">tablet") {
     flex-direction: row;
   }
 }
@@ -23,7 +23,7 @@
 .sub {
   width: 100%;
   position: relative;
-  @include media(">phone") {
+  @include media(">tablet") {
     width: 50%;
   }
   &:before {

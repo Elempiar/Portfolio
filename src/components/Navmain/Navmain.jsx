@@ -5,7 +5,7 @@ export default function Navmain() {
   return (
     <nav className={styles.container}>
       <a href="#about" className={styles.button}>
-        About Me
+        About
       </a>
       <a href="#projects" className={styles.button}>
         Projects

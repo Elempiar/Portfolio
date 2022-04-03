@@ -42,10 +42,10 @@ export const getAllPosts = () => {
     .sort(function (a, b) {
       // compare 2 dates
       if (a.frontmatter.date < b.frontmatter.date) {
-        return 1;
+        return -1;
       }
       if (a.frontmatter.date > b.frontmatter.date) {
-        return -1;
+        return 1;
       }
       return 0;
     })

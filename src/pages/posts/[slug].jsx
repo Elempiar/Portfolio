@@ -1,11 +1,14 @@
-import React from "react";
+import { useEffect, useMemo } from "react";
 import { getMDXComponent } from "mdx-bundler/client";
 import { getAllPosts, getSinglePost } from "../../mdx";
 import Head from "next/head";
-import styles from "../../scss/post.module.scss";
+import styles from "./post.module.scss";
 
 export default function PostPage({ post: { code, frontmatter } }) {
-  const Component = React.useMemo(() => getMDXComponent(code), [code]);
+  const Component = useMemo(() => getMDXComponent(code), [code]);
+  useEffect(() => {
+    document.querySelector("body").classList.remove("home");
+  });
   return (
     <>
       <Head>
