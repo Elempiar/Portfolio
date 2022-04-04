@@ -10,9 +10,7 @@ export default function App({ Component, pageProps }) {
       <main>
         <Component {...pageProps} />
       </main>
-      <div className="clear"></div>
       <Footer />
-      <div className="background"></div>
     </>
   );
 }

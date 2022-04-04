@@ -9,13 +9,14 @@ export default function Navbar() {
   function showMenu() {
     setShow(true);
   }
+
   function hideMenu() {
     setShow(false);
   }
 
   return (
     <>
-      {show && <Menu hideMenu={hideMenu} />}
+      {<Menu hideMenu={hideMenu} show={show} />}
       <nav className={styles.nav}>
         <div className={styles.container}>
           <Link href="/">

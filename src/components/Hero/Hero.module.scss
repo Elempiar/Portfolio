@@ -21,16 +21,25 @@
   text-transform: uppercase;
   font-weight: 700;
   -webkit-text-stroke-color: $color-accent;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-fill-color: $color-main-light;
   position: absolute;
   width: 100%;
+  text-shadow: 2px 2px #0004;
+
   .fill {
     -webkit-text-stroke-width: 0px;
     -webkit-text-fill-color: $color-accent;
   }
   &.top {
     top: -2em;
+
+    ::selection {
+      background: $color-main-dark;
+    }
+    ::-moz-selection {
+      background: $color-main-dark;
+    }
     :nth-of-type(1) {
       margin-left: 20px;
     }
@@ -43,7 +52,7 @@
   }
   &.bot {
     bottom: -2em;
-    -webkit-text-fill-color: rgba(0, 0, 0, 0);
+    -webkit-text-fill-color: $color-main-dark;
     text-align: right;
     :nth-of-type(1) {
       margin-right: 20px;

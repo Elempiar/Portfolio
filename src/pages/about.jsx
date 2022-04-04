@@ -1,14 +1,18 @@
-import React from "react";
+import { useEffect } from "react";
 import Head from "next/head";
+import Cv from "../components/Cv/Cv";
 
 export default function About({ posts }) {
+  useEffect(() => {
+    document.querySelector("body").classList.remove("home");
+  });
   return (
     <>
       <Head>
-        <title>Luuk Verboeket | About Me</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <title>Luuk Verboeket | About</title>
       </Head>
-
-      <h1>tieten</h1>
+      <Cv />
     </>
   );
 }

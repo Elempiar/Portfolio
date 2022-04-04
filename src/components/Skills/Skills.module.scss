@@ -3,38 +3,26 @@
 .container {
   width: 90%;
   max-width: $max-width;
-  margin: 0 auto;
-  margin-top: 10rem;
-  position: relative;
-  &:before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    border-top: 2px solid $color-accent;
-    pointer-events: none;
+  @include media(">tablet") {
+    margin-top: 20rem;
   }
+  margin: 10rem auto 4rem;
+  position: relative;
 }
 
-.list{
+.list {
   width: 100%;
   text-align: center;
   float: left;
   margin-bottom: 4rem;
-  @include media(">tablet"){
+  @include media(">phone") {
     width: 50%;
   }
-  h2{
-    font-weight: 400;
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-    color: $color-text;
-    text-transform: uppercase;
-    padding: 10px 0;
+  h2 {
     text-align: center;
     margin-bottom: 2rem;
   }
-  li{
+  li {
     display: inline-block;
     margin: 10px;
     padding: 0 20px;
@@ -49,19 +37,23 @@
     text-transform: uppercase;
     line-height: 32px;
   }
-  &:nth-of-type(1){
-    li{
-      &:hover{
+  &:nth-of-type(1) {
+    li {
+      &:hover {
         background-color: $color-accent;
         color: $color-main-dark;
       }
     }
   }
-  &:nth-of-type(2){
-    li{
+  &:nth-of-type(2) {
+    li {
       border-color: $color-main-light;
+      &:hover {
+        background-color: $color-main-light;
+        color: $color-main-dark;
+      }
     }
-    .planning{
+    .planning {
       opacity: 50%;
     }
   }

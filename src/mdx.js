@@ -7,7 +7,6 @@ import remarkGfm from "remark-gfm";
 import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypePrism from "rehype-prism-plus";
-import uniq from "lodash/uniq";
 
 export const POSTS_PATH = path.join(process.cwd(), "./src/posts");
 
@@ -42,19 +41,19 @@ export const getAllPosts = () => {
     .sort(function (a, b) {
       // compare 2 dates
       if (a.frontmatter.date < b.frontmatter.date) {
-        return 1;
+        return -1;
       }
       if (a.frontmatter.date > b.frontmatter.date) {
-        return -1;
+        return 1;
       }
       return 0;
     })
     .map((postData, index) => {
       return {
         ...postData,
-        id: index+1
-    }
-  })
+        id: index + 1,
+      };
+    });
 };
 
 export const getSinglePost = async (slug) => {
