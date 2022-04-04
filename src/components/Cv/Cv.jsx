@@ -28,11 +28,22 @@ export default function Cv() {
         <h2>About Me</h2>
         <div>
           <p>
-            I&apos;m an <span className="accent">eager learner</span>,
-            passionate about anything front-end, very{" "}
+            I&apos;m <span className="accent">eager-to-learn</span>, passionate
+            about anything front-end, very{" "}
             <span className="accent">social</span>, pretty{" "}
             <span className="accent">easy-going</span> and I like to add a pinch
             of <span className="accent">humor</span>, whenever possible.
+          </p>
+          <p>
+            I like to mix{" "}
+            <span className="accent">creativity with practicallity</span>, and
+            I&apos;m usually a very <span className="accent">rational</span>{" "}
+            thinker.
+          </p>
+          <p>
+            My birthday is the <span className="accent">16th of April</span>,
+            and at only <span className="accent">169cm</span> tall I&apos;m a
+            frequent target of height, or lack thereof, jokes.
           </p>
         </div>
       </div>
