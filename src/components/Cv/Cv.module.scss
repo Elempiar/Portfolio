@@ -72,6 +72,17 @@
     margin-bottom: 2rem;
     margin-right: 0;
   }
+  .work {
+    display: flex;
+    flex-direction: column;
+    .employer {
+      font-weight: 700;
+    }
+    .yearsActive {
+      font-size: 1rem;
+      opacity: 0.5;
+    }
+  }
   @include media(">tablet") {
     margin-top: 10rem;
     flex-direction: row;
@@ -81,6 +92,8 @@
     div {
       width: 100%;
       p {
+        margin-top: 0.3rem;
+        font-size: 1.5rem;
         width: 100%;
       }
     }
@@ -93,7 +106,7 @@
       content: "";
       height: 300%;
       border-left: 2px solid $color-main-light;
-      top: -100%;
+      top: -160%;
       left: 0;
       position: absolute;
     }
